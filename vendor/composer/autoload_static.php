@@ -40,6 +40,10 @@ class ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52
         array (
             'Dotenv\\' => 7,
         ),
+        'C' => 
+        array (
+            'Caloy\\Mongo\\' => 12,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -75,6 +79,20 @@ class ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
+        'Caloy\\Mongo\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'M' => 
+        array (
+            'Mustache' => 
+            array (
+                0 => __DIR__ . '/..' . '/mustache/mustache/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -91,6 +109,7 @@ class ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitd9aabef8771ba62b7718ae291aa0ea52::$classMap;
 
         }, null, ClassLoader::class);

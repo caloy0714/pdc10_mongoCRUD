@@ -1,6 +1,13 @@
 {
+    "name": "caloy/mongo",
+    "autoload": {
+        "psr-4": {
+            "Caloy\\Mongo\\": "src/"
+        }
+    },
     "require": {
-        "vlucas/phpdotenv": "^5.5",
-        "mongodb/mongodb": "^1.12"
+        "mongodb/mongodb": "^1.12",
+        "mustache/mustache": "^2.14",
+        "vlucas/phpdotenv": "^5.5"
     }
 }
